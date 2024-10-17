@@ -66,8 +66,8 @@ const author1 = new Author("George Orwell");
 const book1 = new Book("1984", author1);
 const book2 = new Book("Animal Farm", author1);
 
-const member1 = new LibraryMember(1, "Alice");
-const member2 = new LibraryMember(2, "Bob");
+const member1 = new LibraryMember(1, "Akhil");
+const member2 = new LibraryMember(2, "Amal");
 
 
 member1.borrowBook(book1); 

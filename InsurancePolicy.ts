@@ -1,4 +1,3 @@
-import { base } from "mocha/lib/reporters";
 
 enum InsuranceType{
     Health = "Health",
@@ -63,9 +62,9 @@ class InsurancePolicy{
 }
 
 
-const policy1 = new InsurancePolicy("Alice", 30, InsuranceType.Health, 150000, ["Diabetes"]);
-const policy2 = new InsurancePolicy("Bob", 22, InsuranceType.Life, 50000);
-const policy3 = new InsurancePolicy("Charlie", 65, InsuranceType.Auto, 200000, ["Hypertension", "Asthma"]);
+const policy1 = new InsurancePolicy("Akhi", 30, InsuranceType.Health, 150000, ["Diabetes"]);
+const policy2 = new InsurancePolicy("Amal", 22, InsuranceType.Life, 50000);
+const policy3 = new InsurancePolicy("Rahul", 65, InsuranceType.Auto, 200000, ["Hypertension", "Asthma"]);
 
 console.log(`Premium for ${policy1.policyHolderName}: $${policy1.calculatePremium()}`);
 console.log(`Premium for ${policy2.policyHolderName}: $${policy2.calculatePremium()}`);

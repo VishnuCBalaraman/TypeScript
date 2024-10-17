@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 var InsuranceType;
 (function (InsuranceType) {
     InsuranceType["Health"] = "Health";
@@ -46,9 +44,9 @@ var InsurancePolicy = /** @class */ (function () {
     };
     return InsurancePolicy;
 }());
-var policy1 = new InsurancePolicy("Alice", 30, InsuranceType.Health, 150000, ["Diabetes"]);
-var policy2 = new InsurancePolicy("Bob", 22, InsuranceType.Life, 50000);
-var policy3 = new InsurancePolicy("Charlie", 65, InsuranceType.Auto, 200000, ["Hypertension", "Asthma"]);
+var policy1 = new InsurancePolicy("Akhi", 30, InsuranceType.Health, 150000, ["Diabetes"]);
+var policy2 = new InsurancePolicy("Amal", 22, InsuranceType.Life, 50000);
+var policy3 = new InsurancePolicy("Rahul", 65, InsuranceType.Auto, 200000, ["Hypertension", "Asthma"]);
 console.log("Premium for ".concat(policy1.policyHolderName, ": $").concat(policy1.calculatePremium()));
 console.log("Premium for ".concat(policy2.policyHolderName, ": $").concat(policy2.calculatePremium()));
 console.log("Premium for ".concat(policy3.policyHolderName, ": $").concat(policy3.calculatePremium()));
